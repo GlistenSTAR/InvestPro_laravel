@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation | InvestPro – Wallet & Banking Online Investment Platform</title>
+    <!--favicon icon-->
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicon.png">
+    <meta name="description" content="Thanks for purchasing Corpoint. If you need any support, please contact with us.">
+    <meta name="author" content="UX-Theme">
+    <meta name="copyright" content="UX-Theme">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/theme.fonts.css">
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="oh">
+            <div class="left-side">
+                <div class="left-content">
+                    <ul>
+                        <li><a href="#introduction" class="anchor">Introduction</a></li>
+                        <li><a href="#about" class="anchor">About</a></li>
+                        <li><a href="#installation" class="anchor">Installation</a></li>
+                        <li><a href="#cron" class="anchor">Cron</a></li>
+                        <li><a href="#admin" class="anchor">Admin Dashboard</a></li>
+                        <li><a href="#referral" class="anchor">Manage Referral</a></li>
+                        <li><a href="javascript:void(0)"> Deposit Management <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#gateways" class="anchor"><span><i class="fa fa-angle-right"></i></span>Gateways</a></li>
+                                <li><a href="#pending" class="anchor"><span><i class="fa fa-angle-right"></i></span>Pending Deposit</a></li>
+                                <li><a href="#accepted" class="anchor"><span><i class="fa fa-angle-right"></i></span> Accepted Deposit</a></li>
+                                <li><a href="#rejected" class="anchor"><span><i class="fa fa-angle-right"></i></span> Rejected Deposit</a></li>
+                                <li><a href="#depositlog" class="anchor"><span><i class="fa fa-angle-right"></i></span> Deposit Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)"> Users Management <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#allusers" class="anchor"><span><i class="fa fa-angle-right"></i></span>All Users</a></li>
+                                <li><a href="#activeuser" class="anchor"><span><i class="fa fa-angle-right"></i></span>Active Users</a></li>
+                                <li><a href="#banneduser" class="anchor"><span><i class="fa fa-angle-right"></i></span>Banned Users</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)"> Withdraw Management <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#methods" class="anchor"><span><i class="fa fa-angle-right"></i></span>Methods</a></li>
+                                <li><a href="#pendingwithdraw" class="anchor"><span><i class="fa fa-angle-right"></i></span> Pending Withdraw</a></li>
+                                <li><a href="#withdrawlog" class="anchor"><span><i class="fa fa-angle-right"></i></span>Withdraw Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#transaction" class="anchor"> Transaction Log </a>
+                            <ul class="dropdown">
+                                <li><a href="#history" class="anchor"><span><i class="fa fa-angle-right"></i></span>Transaction History</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="javascript:void(0)"> News <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#addNews" class="anchor"><span><i class="fa fa-angle-right"></i></span>Add</a></li>
+                                <li><a href="#manageNews" class="anchor"><span><i class="fa fa-angle-right"></i></span>Manage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)"> Plan <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#addPlan" class="anchor"><span><i class="fa fa-angle-right"></i></span>Add</a></li>
+                                <li><a href="#managePlan" class="anchor"><span><i class="fa fa-angle-right"></i></span>Manage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)"> Menus <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#addMenus" class="anchor"><span><i class="fa fa-angle-right"></i></span>Add</a></li>
+                                <li><a href="#manageMenus" class="anchor"><span><i class="fa fa-angle-right"></i></span>Manage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">Web Interface<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#banner" class="anchor"><span><i class="fa fa-angle-right"></i></span>Banner </a></li>
+                                <li><a href="#workarea" class="anchor"><span><i class="fa fa-angle-right"></i></span>Work Area</a></li>
+                                <li><a href="#about" class="anchor"><span><i class="fa fa-angle-right"></i></span>About</a></li>
+                                <li><a href="#serviceSection" class="anchor"><span><i class="fa fa-angle-right"></i></span>Service</a></li>
+                                <li><a href="#investors" class="anchor"><span><i class="fa fa-angle-right"></i></span>Investors</a></li>
+                                <li><a href="#partners" class="anchor"><span><i class="fa fa-angle-right"></i></span>Partners</a></li>
+                                <li><a href="#socials" class="anchor"><span><i class="fa fa-angle-right"></i></span>Socials</a></li>
+                                <li><a href="#logoicon" class="anchor"><span><i class="fa fa-angle-right"></i></span>Logo & Icon</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="javascript:void(0)"> General <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#settings" class="anchor"><span><i class="fa fa-angle-right"></i></span>Settings</a></li>
+                                <li><a href="#email" class="anchor"><span><i class="fa fa-angle-right"></i></span>Email Template</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- User Dashboard Start -->
+
+                        <li><a href="javascript:void(0)">User Dashboard  <i class="fa fa-angle-down"></i></a>
+
+                            <ul class="dropdown">
+                                <li><a href="#userDashboard" class="anchor"><span><i class="fa fa-angle-right"></i></span>Dashboard</a></li>
+                                <li><a href="#register" class="anchor"><span><i class="fa fa-angle-right"></i></span>Profile Register</a></li>
+                                <li><a href="#login" class="anchor"><span><i class="fa fa-angle-right"></i></span>User Login</a></li>
+                                <li><a href="#usersWallet" class="anchor"><span><i class="fa fa-angle-right"></i></span>Wallet</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="javascript:void(0)"> Deposit <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#addDerposit" class="anchor"><span><i class="fa fa-angle-right"></i></span>Add Deposit</a></li>
+                                <li><a href="#depositLog" class="anchor"><span><i class="fa fa-angle-right"></i></span>Diposit Log</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="javascript:void(0)"> Investment <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#investPlan" class="anchor"><span><i class="fa fa-angle-right"></i></span>Investment Plan</a></li>
+                                <li><a href="#investLog" class="anchor"><span><i class="fa fa-angle-right"></i></span>Invest Log</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="javascript:void(0)"> Transaction  <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#fundTransfer" class="anchor"><span><i class="fa fa-angle-right"></i></span>Fund Transfer</a></li>
+                                <li><a href="#transactionLog" class="anchor"><span><i class="fa fa-angle-right"></i></span>Transaction Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)"> Withdraw  <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#userWithdraw" class="anchor"><span><i class="fa fa-angle-right"></i></span>Withdraw</a></li>
+                                <li><a href="#withdrawLog" class="anchor"><span><i class="fa fa-angle-right"></i></span>Withdraw Log</a></li>
+                            </ul>
+                        </li>
+                        <!-- Pranto Added Stop -->
+                        <li><a href="#support" class="anchor">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!--right side-->
+        <div class="right-side">
+            <div class="right-content">
+
+                <!--id introduction-->
+                <div id="introduction" class="common_section">
+                    <h1 class="bit_title">InvestPro</h1>
+                    <div class="content-welcome">
+                        <h4>InvestPro – Wallet & Banking Online Investment Platform</h4>
+                        <p><strong>Created on:  </strong> November 06, 2020 </p>
+                        <p><strong>Updated on:  </strong> November 19, 2020 </p>
+                        <p><strong>By: </strong> <a href="http://webplugintheme.com/">wowtheme7</a></p>
+                        <p><strong>Email: </strong> <a href="mailto:priyanka007.sen@gmail.com">priyanka007.sen@gmail.com</a></p>
+                        <h5>For a quick and easy installation we created for you this technical support.</h5>
+                        <p>If you have any questions that are beyond the scope of this help file, please feel free to email, via my user page contact form or put a ticket at Support Center .
+                            <br>Thank you so much!</p>
+                    </div>
+                </div>
+
+                <!--id about-->
+                <div id="about" class="common_section">
+                    <h1 class="bit_title">About</h1>
+                    <div class="content-welcome">
+                        <p><strong>“InvestPro”</strong> Multiprrpose Wallet & Banking Online Investment Platform. It is a fully functional web Platform for managing your Wallet , Banking & Online investment platform conveniently. It allows you to register
+                            users, take deposits, remit earnings and process both single and multi-level ROI earnings. With InvestPro you’ll be able to setup your own platform as fast as possible. Major payment gateways and cryptocurrencies supported
+                            include Stripe, Coinpayments (BTC, ETH, LTC, DASH, XRP and BCH) and Paypal.</p>
+
+                    </div>
+                </div>
+
+
+                <!--id installation-->
+                <div id="installation" class="common_section installation">
+                    <h1 class="bit_title">Installation</h1>
+                    <div class="content-welcome">
+                        <p>After downloading file from codecanoyn just extract in your computer and you will get three folders:</p>
+
+                        <p><strong>Step 1:  </strong>Upload project.zip to your host and unzip.</p>
+                        <p><strong>Step 2:  </strong>Extract the project.zip file.</p>
+                        <p><strong>Step 3:  </strong>Now you just access into the main file folder and then move all folders and files (EX: assets,index.php,install ,.htaccess and system folders..) one step up to public _html directory> Keep in mind about
+                            .If you face any problem please see the <a target="_blank" href="https://www.youtube.com/watch?v=uC2FSi67b_I&feature=youtu.be">Video Tutorial</a></p>
+                        <p><strong>Step 4:  </strong>Now, Browse your application <strong>http://yourdomain.com/install</strong> Installer first step showing the directory and server requirements.
+                            <br> If all requirements meet then <strong>*Enter your database name, host name, username, password</strong> and click on Install Now</p>
+
+                        <img src="images/installation/installer.png" alt="Installation image">
+                        <p><strong>Step 5:  </strong>Now, Click on Click to "GO TO WEBSITE" your application button to access application.</p>
+                        <img src="images/installation/go.png" alt="Installed Successfully image">
+                        <p><strong>Step 6:  </strong>Please go to your domain name http://yourdomain.com/admin</p>
+                        <p><strong>Step 7:  </strong>User name/Email: admin@admin.com | Password: admin . After login please change your user name/email and password.</p>
+                        <p><strong>Step 8:  </strong>Thank you for purchasing.</p>
+
+
+                        <p><strong>NB:</strong> If you are failed to install this script to server then send us a mail in <strong>support@webplugintheme.com</strong></p>
+
+
+                        <p class="lead" style="padding-bottom: 50px">Please use the left navigation bar to browse through this support. Let’s go !</p>
+
+                        <h2><strong>Php version</strong></h2>
+
+                        <strong>Before install, please make sure you have the components bellow enable on your server</strong>
+                        <pre>
+                    <code>
+                    PHP 7.2 or greater (with PHP exec function, etc.)
+                    OpenSSL PHP Extension
+                    PDO PHP Extension
+                    Mbstring PHP Extension
+                    Tokenizer PHP Extension
+                    XML PHP Extension
+                    PHP Fileinfo extension
+                    PHP Zip Archive
+                    Rewrite Module
+                    </code>
+                    </pre>
+                        <strong>File and folder permissions</strong>
+                        <pre>
+                    <code>
+                    /bootstrap        775 or 770
+                    /public/uploads   775 or 770
+                    /storage          775 (recursively)
+                    </code>
+                    </pre>
+
+                        <h2 id="installation-apache"><strong>Installation with Apache</strong></h2>
+                        <h4><strong>Creating a new Database</strong></h4>
+
+                        <p>First thing you want to do before installing <strong>InvestPro</strong> is to create a new database on your mysql server. If you already know how to do this/or have already created one just skip to the next step.</p>
+                        <p>Your hosting provider will most likely have <strong>phpMyAdmin</strong> as mysql manager. If that is the case here is a step by step guide (if not the process will be very similar on other managers.</p>
+                        <p>Login to your control panel, find and click phpMyAdmin link.</p>
+                        <p>Click on the database tab in the top menu, enter any name for your database and click create.</p>
+
+                        <h4><strong>Uploading Files</strong></h4>
+
+                        <p>After creating a database, unzip the file you donwloaded from CodeCanyon and upload the <strong>contents</strong> of <strong>InvestPro</strong> folder to your server root, usually called <strong>www</strong> or <strong>html</strong>                            or <strong>public_html</strong>.</p>
+
+                        <div class="alert alert-warning" role="alert">
+                            <strong>Important:</strong> Always use a desktop application like <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">FileZilla</a> to upload files to FTP as opposed to web based file managers
+                            to avoid issues with corrupted or not properly uploaded files.
+                        </div>
+
+                        <div class="alert alert-warning" role="alert">
+                            <strong>Important:</strong> Make sure that <strong>.htaccess</strong> file got copied properly from the download to main InvestPro folder on your server.
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- id cron -->
+                <div id="cron" class="common_section cron">
+                    <h1 class="bit_title">Cron</h1>
+                    <div class="content-welcome">
+                        <p><strong>Step 1:  </strong>Go "Cron Jobs" from your cPanel Dashboard.</p>
+                        <p><strong>Step 2:  </strong>There you will see "Add New Job" sention. And choose "Per Minutes" from "Common Settings"</p>
+                        <p><strong>Step 3:  </strong>Add this line curl <code>curl yourdomain.com/cron</code> in command input field. (That's it)</p><br>
+                        <a href="https://www.youtube.com/watch?v=Vmff4grExtA&feature=youtu.be" target="_blank">How to add Cron Jobs in Cpanel</a><br>
+                        <p><strong>NOTE:</strong> If you still unable to install then pls mail us, we will install it for FREE</p>
+                    </div>
+                </div>
+                <!-- id cron -->
+
+                <!--id admin dashboard-->
+                <div id="admin" class="common_section">
+                    <h1 class="bit_title underline">Admin Dashboard:</h1>
+                    <div class="content-welcome">
+                        <p>Here Admin Can Control All System.
+                            <p>You can change each and everything of this system from this Admin panel. From general settings you can change the basic settings of this site such as colors, logo, favicon etc. You can also update the contents of pages. From
+                                email settings you can change informations of Email. </p>
+                            <img src="images/dashboard.png">
+                    </div>
+                </div>
+                <!--id referral dashboard-->
+                <div id="referral" class="common_section">
+                    <h1 class="bit_title underline">Manage Referral:</h1>
+                    <div class="content-welcome">
+                        <p><b>We are introducing a completely new credit system with this version. This would now allow store owners to define varied percentage for each level of referrers.</b></p> <br>
+
+
+                        <ul>
+                            <li>Suppose, a store has enabled the Level Based Credit System and added credit percentage for 3 levels of referrers. Meaning, whenever a customer purchases an item, only the 3 upper most referrers will be entitled to receive credit
+                                points in accordance to the set percentage. Also, the plugin would now allow to set credit percentage for customer. Meaning, customers too would be entitled to earn credit points based on their purchases. The percentage
+                                set for Customer,Referrer 1, 2 and 3 are 5%, 2% and 1% respectively.</li> <br>
+
+                            <li>Customer A, referred Customer B. Customer B referred Customer C. Customer C referred Customer D. Customer D referred customer E.</li><br>
+
+                            <li>Finally user can refer to join under them via share their referral link which in there user dashboard. See the dashnboard :
+                                <img src="images/referral.png">
+                            </li>
+
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <!--id deposit management -->
+                <div id="gateways" class="common_section">
+                    <h1 class="bit_title underline"> Deposit Management </h1>
+                    <div class="content-welcome">
+                        <p>
+                            In Deposit Management, Admin can manage Gateways, Pending, Accepted Rejected, & Deposit Log etc.
+                        </p>
+                        <p>
+                            <strong>Gateways: </strong> Admin can manage All Payment Gateway.
+                        </p>
+                        <img src="images/gateway.png" alt="gateway image">
+
+                    </div>
+                </div>
+
+                <!--id Pending-->
+                <div id="pending" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Pending Deposit: </strong> Admin can see pending deposit.
+                        </p>
+                    </div>
+                </div>
+
+                <!--id accepted-->
+                <div id="accepted" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Accepted Deposit: </strong> Here Admin can accept deposit.
+                        </p>
+                    </div>
+                </div>
+
+                <!--id rejected-->
+                <div id="rejected" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Rejected Deposit: </strong> Here Admin can rejected deposit for any problem occur.</p>
+                    </div>
+                </div>
+
+                <!--id depositlog-->
+                <div id="depositlog" class="common_section">
+                    <div class="content-welcome">
+                        <p><strong>Deposit Log: </strong> Here admin can see deposit log.</p>
+                    </div>
+                </div>
+
+
+                <!--id All Users-->
+                <div id="allusers" class="common_section">
+                    <h1 class="bit_title underline">Users Management</h1>
+                    <div class="content-welcome">
+                        <p>
+                            In Users Management section, Admin can see all the users list & search user.
+                        </p>
+                        <img src="images/user.png" alt="user image">
+                        <p id="allusers">
+                            <strong>All Users: </strong> Admin can see all the users list.
+                        </p>
+                        <p id="activeuser">
+                            <strong>Active Users: </strong> Admin can see all the active users.
+                        </p>
+                        <p id="banneduser">
+                            <strong>Banned Users: </strong> Admin can see all the banned users.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--id Withdraw Management-->
+                <div id="methods" class="common_section">
+                    <h1 class="bit_title underline">Withdraw Management</h1>
+                    <div class="content-welcome">
+                        <p>
+                            In Withdraw Management section, Admin can setup Withdraw Methods.
+                        </p>
+                        <img src="images/withdraw.png" alt="withdraw image">
+                        <!--id Methods-->
+                        <div id="" class="common_section">
+                            <div class="content-welcome">
+                                <p>
+                                    <strong>Methods : </strong> Admin can manage (create, edit, delete) Methods.
+                                </p>
+                            </div>
+                        </div>
+                        <!--id Pending-->
+                        <div id="pendingwithdraw" class="common_section">
+                            <div class="content-welcome">
+                                <p>
+                                    <strong>Pending Withdraw : </strong> Admin can see Pending Withdraw.
+                                </p>
+                            </div>
+                        </div>
+                        <!--id Withdraw-->
+                        <div id="withdrawlog" class="common_section">
+                            <div class="content-welcome">
+                                <p>
+                                    <strong> Withdraw Log: </strong> Admin can see Withdraw Log.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--id Transaction  -->
+                <div id="transaction" class="common_section">
+                    <h1 class="bit_title underline"> Transaction Log </h1>
+                    <div class="content-welcome">
+                        <p>
+                            In Transaction Log, Admin can see all user Transaction & serach user etc.
+                        </p>
+                        <p id="history">
+                            <strong>Transaction All History: </strong>
+                        </p>
+                        <img src="images/transaction.png" alt="Transaction image">
+
+                    </div>
+                </div>
+
+                <!--id News-->
+                <div id="addNews" class="common_section">
+                    <h1 class="bit_title underline">News </h1>
+                    <div class="content-welcome">
+                        <p>
+                            In this section, Admin can create, manage & delete news.
+                        </p>
+                        <img src="images/news.png" alt="news image">
+                        <p id="">
+                            <strong>Add: </strong> Admin can add news.
+                        </p>
+                        <p id="manageNews">
+                            <strong>Manage: </strong> Admin can manage (create, edit, delete) News.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--id Plan Category-->
+                <div id="addPlan" class="common_section">
+                    <h1 class="bit_title underline">Plan </h1>
+                    <div class="content-welcome">
+                        <p>
+                            In this section, Admin can create, edit, delete, investment plan.
+                        </p>
+                        <img src="images/plan.png" alt="plan image">
+                        <p id="">
+                            <strong>Add: </strong> Admin can investment plan.
+                        </p>
+                        <p id="managePlan">
+                            <strong>Manage: </strong> Admin can manage (create, edit, delete) investment plan.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!--id Menus Category-->
+                <div id="addMenus" class="common_section">
+                    <h1 class="bit_title underline">Menus </h1>
+                    <div class="content-welcome">
+                        <p>
+                            In this section, Admin can create, manage menus dynamically.
+                        </p>
+                        <img src="images/menus.png" alt="menus image">
+                        <p id="">
+                            <strong>Add: </strong> Admin can add menus for website.
+                        </p>
+                        <p id="manageMenus">
+                            <strong>manage: </strong> Admin can manage (create, edit, delete) menus.
+                        </p>
+                    </div>
+                </div>
+
+                <!--id hero section-->
+                <div id="banner" class="common_section">
+                    <h1 class="bit_title underline">Web Interface</h1>
+                    <div class="content-welcome">
+                        <p>
+                            In this section, Admin can manage all the sections of the home page.
+                        </p>
+                        <p>
+                            <strong>Banner : </strong>Here Admin can manage (add, edit, delete) the features banner.
+                            <img src="images/banner.png" alt="banner image">
+                    </div>
+                </div>
+
+                <!--Features section-->
+                <div id="workarea" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Work Area: </strong> Here Admin can manage (add, edit, delete) all the work area.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Intro section-->
+                <div id="about" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>About: </strong> Here Admin can change about section content with images.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Service section-->
+                <div id="serviceSection" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Service : </strong> Here Admin can change the service .
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!--investors section-->
+                <div id="investors" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Investors : </strong> Here Admin can set investment <i class="fa fa-paper-plane" aria-hidden="true"> plan</i>.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Partners section-->
+                <div id="partners" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Partners Section: </strong> Here Admin can manage (add, edit, delete) partners.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Socials section-->
+                <div id="socials" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Socials Section: </strong> Here Admin can change the Socials section.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--id Logo & Text section-->
+                <div id="logoicon" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Logo & Text: </strong> Here Admin can change the logo & icon.
+                        </p>
+                        <img src="images/logo.png" alt="logo image">
+                    </div>
+                </div>
+
+
+                <!--id General Category-->
+                <div id="settings" class="common_section">
+                    <h1 class="bit_title underline">General </h1>
+                    <div class="content-welcome">
+                        <p>
+                            In this section, Admin can manage General Settings with Email Templates.
+                        </p>
+                        <img src="images/settings.png" alt="settings image">
+                        <p>
+                            <strong>Settings: </strong> Admin can setup footer section with copyright.
+                        </p>
+                    </div>
+                </div>
+
+                <!--id Templates-->
+                <div id="email" class="common_section">
+                    <div class="content-welcome">
+                        <p>
+                            <strong>Email Templates: </strong> Admin can manage Email Templates.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <!--id Users Dashboard-->
+
+                <div id="userDashboard" class="common_section">
+                    <h1 class="bit_title">Users Dashboard</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>User Dashboard</strong> system, here user will see all transaction summary & redirect shorcut.</p>
+                        <ul>
+                            <li>Current Balance</li>
+                            <li>Earning Total</li>
+                            <li>Total Withdraw</li>
+                            <br>
+                            <li>This Month Deposit</li>
+                            <li>This Month Earn</li>
+                            <li>This Month Withdraw</li>
+                            <br>
+                            <li>Total Pending Withdraw</li>
+                            <li>Total Fund Transfer</li>
+                            <li>This Month Fund Transfer</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--id register support-->
+                <div id="register" class="common_section">
+                    <h1 class="bit_title">User register</h1>
+                    <div class="content-welcome">
+                        <img src="images/register.png" alt="register image">
+                        <p>
+                            <br> Register: <a href="http://webplugintheme.com/code/InvestPro/register">Sign-Up</a> Here User Registation First
+
+                        </p>
+                    </div>
+                </div>
+                <!--id register support-->
+                <div id="login" class="common_section">
+                    <h1 class="bit_title">User Login</h1>
+                    <div class="content-welcome">
+                        <p>
+                            <h4>Example</h4>
+                            <strong>Email</strong> demo@demo.com <br>
+                            <strong>Password</strong> 12345678
+                            <br>
+                            <br> Login: <a href="http://webplugintheme.com/code/InvestPro/login">Sign-In</a> Here User Email & Password
+                        </p>
+
+                        <img src="images/login.png" alt="register image">
+                    </div>
+                </div>
+                <!--id wallet support-->
+                <div id="usersWallet" class="common_section">
+                    <h1 class="bit_title">User Wallet</h1>
+                    <div class="content-welcome">
+                        <img src="images/wallet-01.png" alt="wallet image">
+                        <img src="images/wallet-02.png" alt="wallet image">
+                    </div>
+                </div>
+
+
+                <div id="addDerposit" class="common_section">
+                    <h1 class="bit_title">Add Deposit</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Add Deposit</strong> system, here user will add balance for invest via given Payment Gateway.</p>
+                        <ul>
+                            <li>Select Payment Gateway</li>
+                            <li>Submit Amount for Add Balance</li>
+                            <li>If all payment process success then balance will add into user account</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div id="depositLog" class="common_section">
+                    <h1 class="bit_title">Diposit Log</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Diposit Log</strong> system, here user will see their deposit history.</p>
+                        <ul>
+                            <li>Gateway Name </li>
+                            <li>Amount</li>
+                            <li>Charge</li>
+                            <li>USD Amount</li>
+                            <li>Status</li>
+                            <li>Transaction ID</li>
+                            <li>Time</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="investPlan" class="common_section">
+                    <h1 class="bit_title">Investment Plan</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Investment Plan</strong> system, here user will invest from their balance in given Invest Plan/Packages. There is 2 type of invest management system.</p>
+                        <ul>
+                            <li>1. Fixed Investment </li>
+                            <li>2. ROI (Return Of Investment)</li>
+                        </ul>
+
+                        <p>1. Fixed Investment : User will invest from his/her balance as "Fixed". He/She will get interest for "LIFETIME" of purchased plan.</p>
+                        <p>2. ROI Investment : User will invest from his/her balance. And they will get interest as purchased plan.</p>
+
+                    </div>
+                </div>
+
+
+                <div id="investLog" class="common_section">
+                    <h1 class="bit_title">Invest Log</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Invest Log</strong> system, here user will see their Invest Plan purchase history. And user will able to know the next time/Date of invest amount return.</p>
+                        <ul>
+                            <li>Package </li>
+                            <li>Type</li>
+                            <li>Invest Amount</li>
+                            <li>Payable</li>
+                            <li>Already Return</li>
+                            <li>Next Return Time</li>
+                            <li>Status</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="fundTransfer" class="common_section">
+                    <h1 class="bit_title">Fund Transfer</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Fund Transfer</strong> system, here user will transfer balance from his/her account to another account of this project.
+                            <p>User will put receiver <strong>EMAIL ADDRESS</strong> then (transfer charge + Transfer Amount) will deduct from his/her balance. And finally "Transfer Amount" will add into receiver balance.</p>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="transactionLog" class="common_section">
+                    <h1 class="bit_title">Transaction Log</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Transaction log</strong> system, here user will see their all transacton history. Deposit, Withdraw, Fund Transfer, Invest & Income history are visible in their. User can search & get details from their.</p>
+                        <ul>
+                            <li>Trans ID </li>
+                            <li>Details</li>
+                            <li>Amount</li>
+                            <li>Old Balance</li>
+                            <li>New Balance</li>
+                            <li>Type</li>
+                            <li>Time</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div id="userWithdraw" class="common_section">
+                    <h1 class="bit_title">Withdraw</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Withdraw</strong> system, here user will withdraw via given withdraw Gatweway.</p>
+                        <ul>
+                            <li>Select Withdraw Gateway</li>
+                            <li>Confirm & Request withdraw</li>
+                            <li>If balance is sufficient then Withdraw reqest submit can possible</li>
+                        </ul>
+                        <img src="images/withdraw-system.png" alt="withdraw system image">
+                    </div>
+                </div>
+
+
+                <div id="withdrawLog" class="common_section">
+                    <h1 class="bit_title">Withdraw Log</h1>
+                    <div class="content-welcome">
+                        <p>In <strong>Withdraw Log</strong> system, here user can see their Withdraw History. User can see their Requested Withdraw </p>
+                        <ul>
+                            <li>Gateway Name</li>
+                            <li>Amount</li>
+                            <li>Charge</li>
+                            <li>Method Cur Amount</li>
+                            <li>Status (Pending/Complete/Rejected)</li>
+                            <li>Transaction ID</li>
+                            <li>Time</li>
+                        </ul>
+                        <img src="images/withdrawlog.png" alt="withdraw system image">
+                    </div>
+                </div>
+
+                <!--id Developer support-->
+                <div id="support" class="common_section">
+                    <h1 class="bit_title">Developer Support</h1>
+                    <div class="content-welcome">
+                        <p>
+                            We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible. Please email us from our profile so we can verify you as our client and help you to
+                            solve any issue. <br> Our profile: <a href="https://codecanyon.net/user/wowtheme7">wowtheme7 </a>
+                            <br> Our Website: <a href="http://www.webplugintheme.com/">www.webplugintheme.com</a>
+                            <br/> Thank you,
+                            <br/>
+                            <Strong>wowtheme7</Strong>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- Pranto Contect Stop -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(".anchor").on("click", function(event) {
+            var target = $($(this).attr("href"));
+
+            if (target.length) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: target.offset().top - 0 + 'px'
+                }, 1000);
+            }
+        });
+
+        $(".left-content>ul>li").on("click", function() {
+            $(this).children(".dropdown").slideToggle();
+            $(this).siblings("li").children(".dropdown").slideUp();
+        });
+        $(".left-content .dropdown li ").on("click", function(e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+
+</html>
