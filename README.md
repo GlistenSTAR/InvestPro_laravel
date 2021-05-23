@@ -1,3 +1,3 @@
 # codecanyon
 
-It's laravel project ( JYJ )
+It's laravel project. 
